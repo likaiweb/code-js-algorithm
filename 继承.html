@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+// 构造函数继承
+function Dog(){
+	this.wow=function(){
+		alert("wow");
+	}
+	this.tom=function(){
+		this.wow();
+	}
+}
+function oldDog(){
+	Dog.call(this);
+}
+var old=new oldDog();
+old.tom();
+// 原型继承
+Dog.prototype.hello=function(){
+	alert("hello");
+}
+var dog=new Dog();
+dog.hello();
+</script>
