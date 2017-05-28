@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		div{
+			height: 30px;
+			line-height: 30px;
+			border-radius:5px ;
+			margin: 5px 20px;
+			background: #333;
+			text-align: center;
+			color: #fff;
+			transition: all .5s;
+			cursor: pointer;
+		}
+		div:hover{
+			background: yellowgreen;
+		}
+	</style>
+	<body>
+		<div style="width: 100px;">1</div>
+		<div style="width: 200px;">2</div>
+		<div style="width: 50px;">3</div>
+		<div style="width: 40px;">4</div>
+		<div style="width: 90px;">5</div>
+		<div style="width: 120px;">6</div>
+		<div style="width: 70px;">7</div>
+	</body>
+</html>
+<script>
+function copy(a){
+	var newarr=[];
+	for(var i in a){
+		newarr[i]=a[i];
+	}
+	return newarr;
+}
+function sort(aa,fun){
+	var arr=copy(aa);
+	for(var i=0;i<arr.length;i++){
+		var min=arr[i];
+		var temp,index=i;
+		for(var j=i+1;j<arr.length;j++){
+			if(fun(arr[j],min)){
+				min=arr[j];
+				index=j;
+			}
+		}
+		temp=arr[i];
+		arr[i]=min;
+		arr[index]=temp;
+	}
+	return arr;
+}
+
+var arr=document.getElementsByTagName("div");
+var barr=sort(arr,function(a,b){
+	return parseInt(a.style.width)<parseInt(b.style.width);
+})
+for(var i=0;i<barr.length;i++){
+	document.body.appendChild(barr[i]);
+}
+</script>
