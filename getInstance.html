@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+// 实现单例模式。
+// 第一次调用时已经赋值给instance,第二次时不会赋值，不会new
+	var fun=function(name){
+		this.name=name;
+		this.instance=null;
+	}
+	fun.getInstance=function(name){
+		if(!this.instance){
+			this.instance=new fun(name);
+		}
+		return this.instance;
+	}
+	var a=fun.getInstance("赵丽颖");
+	var b=fun.getInstance("我也是赵丽颖");
+	console.log(a.name);
+	console.log(b.name);
+// 闭包实现
+var Singleton = function (name) {  
+  this.name = name;
+}
+
+Singleton.getInstance = (function() { 
+  var instance = null;
+  return function(name) {  
+    if(!instance) {
+      instance = new Singleton(name);
+    }
+    return this.instance; 
+  }
+})();
+</script>
