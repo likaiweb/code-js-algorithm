@@ -27,6 +27,7 @@ Array.prototype.mySort=function(callback){
 				}
 			}
 		};
+		
 	}else{
 		for (var i = 0; i < newarr.length; i++) {
 			for(var j=i+1;j<newarr.length;j++){
@@ -38,12 +39,12 @@ Array.prototype.mySort=function(callback){
 			}
 		};
 	}
-	
+
 	return newarr;
 }
 var arr=[3,1,4,1,2,4,5];
 console.log(arr.mySort(function(x,y){
 	return y>x;
 }));
-console.log(arr)
+console.log(arr);
 </script>
