@@ -1,13 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>demo</title>
-</head>
-<body>
-</body>
-</html>
-<script>
+
 // 乘法口诀+金字塔
 for(var i=1;i<10;i++){
 	for(var k=9;k>=i;k--){
@@ -46,4 +37,3 @@ for(var i=9;i>=1;i--){
 	}
 	document.write("<br/>");
 };
-</script>

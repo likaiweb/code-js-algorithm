@@ -1,11 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>suiji</title>
-</head>
-<body>
-<script>
+
 // 输入大写字母或者小写字母获取随机数
 function suiji(x,y){
 	var arr=new Array(26);
@@ -46,6 +39,3 @@ else{
 		suiji(n,l);
 	}
 }
-</script>
-</body>
-</html>

@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
 
-</body>
-</html>
-<script>
 String.prototype.fan=function(){
 	var arr=str.split("");
 	console.log(arr);
@@ -20,4 +10,3 @@ String.prototype.fan=function(){
 }
 var str="abcde";
 str.fan()
-</script>

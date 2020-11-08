@@ -1,14 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>demo</title>
-</head>
-<body>
-	
-</body>
-</html>
-<script>
 
 // 添加到新的数组中去，如果重复不加
 	var arr=[1,2,3,6,6,6,6,23,2,1,1,3,4,2,1,4,1,4];
@@ -43,4 +32,3 @@
 		}
 		console.log(newarr)
 	}
-</script>

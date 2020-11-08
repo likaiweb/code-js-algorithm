@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
 
-</body>
-</html>
-<script>
 // 使用apply特性求最大值
 var arr=[2,3,13,4,42,51,5,2];
 console.log(Math.max.apply(null,arr))
@@ -21,4 +11,3 @@ for (var i = 0; i < arr.length; i++) {
 	}
 };
 console.log(n);
-</script>
